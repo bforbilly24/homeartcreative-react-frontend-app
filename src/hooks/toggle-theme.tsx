@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Moon, Sun, LaptopMinimal } from 'lucide-react'
-import { useTheme } from '@/components/providers/theme-provider'
 import { Button } from '@/components/ui/shadcn/button'
 import {
   DropdownMenu,
@@ -8,6 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/shadcn/dropdown-menu'
+import { useTheme } from '@/components/providers/theme-provider'
 
 interface ToggleThemeProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {

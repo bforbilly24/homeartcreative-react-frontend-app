@@ -1,7 +1,6 @@
-import * as THREE from 'three'
 import { useEffect, useRef, useState } from 'react'
-import { useFrame, ReactThreeFiber, extend } from '@react-three/fiber'
 import { useGLTF, useTexture } from '@react-three/drei'
+import { useFrame, ReactThreeFiber, extend } from '@react-three/fiber'
 import {
   BallCollider,
   CuboidCollider,
@@ -11,6 +10,7 @@ import {
   RapierRigidBody,
 } from '@react-three/rapier'
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
+import * as THREE from 'three'
 
 extend({ MeshLineGeometry, MeshLineMaterial })
 

@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
-import { routeTree } from './routeTree.gen'
 import { ScrollProgressProvider } from './components/providers/scroll-progress.bar-provide'
 import { ThemeProvider } from './components/providers/theme-provider'
+import { routeTree } from './routeTree.gen'
 import './styles/global.css'
 
 const router = createRouter({ routeTree })

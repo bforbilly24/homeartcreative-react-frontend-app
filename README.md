@@ -1,8 +1,9 @@
 # Home Art Creative
+
 Home Art Creative adalah situs web untuk layanan desain kreatif, dekorasi, dan solusi seni berbasis di Surabaya, Indonesia. Dibangun menggunakan teknologi modern seperti React, Vite, TanStack Router, Tailwind CSS, dan Shadcn/UI, proyek ini menawarkan antarmuka yang responsif, dioptimalkan untuk SEO, dan mendukung fitur Progressive Web App (PWA) dengan favicon yang dihasilkan oleh RealFaviconGenerator.
 Fitur
 
-Halaman Utama: Menampilkan konten dinamis (termasuk lanyard 3D menggunakan @react-three/*).
+Halaman Utama: Menampilkan konten dinamis (termasuk lanyard 3D menggunakan @react-three/\*).
 Halaman About: Menyajikan kisah pencapaian dengan statistik dan gambar.
 Halaman Contact: Menyediakan informasi kontak dan peta Google Maps tertanam.
 SEO: Meta tag dioptimalkan untuk mesin pencari dan media sosial (Open Graph, Twitter).
@@ -11,6 +12,7 @@ Animasi: Transisi halus menggunakan framer-motion.
 Format Kode: Menggunakan Prettier dengan plugin Tailwind CSS.
 
 # Prasyarat
+
 Sebelum memulai, pastikan Anda memiliki:
 
 Node.js v18 atau lebih baru (unduh).
@@ -20,6 +22,7 @@ Akses ke terminal (misalnya, Bash, PowerShell, atau Terminal macOS).
 (Opsional) pnpm atau Yarn jika tidak menggunakan Bun atau npm.
 
 # Struktur Direktori
+
 ```
 └── 📁public
     └── 📁3d
@@ -135,9 +138,12 @@ Akses ke terminal (misalnya, Bash, PowerShell, atau Terminal macOS).
 ```
 
 # Instalasi
+
 Ikuti langkah-langkah berikut untuk mengatur proyek di mesin lokal Anda.
+
 1. Kloning Repositori
-```bash
+
+````bash
 git clone https://github.com/AradheaRangga/HOMEART_CP.git
 cd HOMEART_CP
 ```bash
@@ -150,7 +156,7 @@ bun install
 Menggunakan npm
 ```bash
 npm install
-```
+````
 
 ```bash
 Menggunakan Yarn

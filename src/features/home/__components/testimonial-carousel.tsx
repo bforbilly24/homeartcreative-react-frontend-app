@@ -1,3 +1,4 @@
+import Autoplay from 'embla-carousel-autoplay'
 import {
   Carousel,
   CarouselContent,
@@ -5,7 +6,6 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from '@/components/ui/shadcn/carousel'
-import Autoplay from 'embla-carousel-autoplay'
 import AnimationContainer from '@/components/global/animation-container'
 import MaxWidthWrapper from '@/components/global/max-width-wrapper'
 import { TESTIMONIALS } from '../constants/testimonials'

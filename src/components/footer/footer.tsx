@@ -1,6 +1,6 @@
-import { TextHoverEffect } from '@/components/ui/aceternityui/text-hover-effect'
 import { FooterLinkBase, FooterLinkWithIcon } from '@/types/footer'
 import { FOOTER_LINKS } from '@/constants/footer-link'
+import { TextHoverEffect } from '@/components/ui/aceternityui/text-hover-effect'
 import MaxWidthWrapper from '@/components/global/max-width-wrapper'
 
 const Footer = () => {
@@ -32,13 +32,21 @@ const Footer = () => {
                   untuk kebutuhan identitas dan branding acara Anda.
                 </p>
                 <p className='mt-4 text-start text-sm font-light text-foreground'>
-                  Jalan Embong Malang Nomor 1-5, Kelurahan Kedungdoro, Kec.
-                  Tegalsari, Kota Surabaya, Provinsi Jawa Timur, +6281931633594,
-                  contact@homeartcreative.id
+                  Ruko Ketintang Jetis Sraten Park, Jl. Ketintang Baru Sel. I
+                  No. 33, Kota Surabaya, Provinsi Jawa Timur, +6281938215569,
+                </p>
+                <p className='mt-4 text-start text-sm font-light text-foreground'>
+                  contact{' '}
+                  <a
+                    href='mailto:contact homeartcreative@gmail.com'
+                    className='hover:text-primary/60 text-primary underline'
+                  >
+                    homeartcreative@gmail.com
+                  </a>
                 </p>
               </div>
 
-              <div className='mt-16 grid grid-cols-2 gap-8 lg:grid-cols-4 xl:col-span-2 xl:mt-0'>
+              <div className='mt-16 grid grid-cols-2 gap-8 lg:grid-cols-3 xl:col-span-2 xl:mt-0'>
                 {Object.entries(FOOTER_LINKS).map(([key, section]) => (
                   <div
                     key={key}

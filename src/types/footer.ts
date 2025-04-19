@@ -10,7 +10,7 @@ interface FooterLinkWithIcon extends FooterLinkBase {
 
 interface FooterSection {
   title: string
-  links: FooterLinkBase[];
+  links: FooterLinkBase[]
 }
 
 export type { FooterLinkBase, FooterLinkWithIcon, FooterSection }

@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { cn } from '@/lib/cn'
 import {
   Dialog,
   DialogContent,
@@ -7,7 +8,6 @@ import {
   DialogTitle,
   DialogDescription,
 } from '@/components/ui/shadcn/dialog'
-import { cn } from '@/lib/cn'
 import { SERVICE_DETAILS } from '../constants/service-detail'
 import { ParallaxScrollProps } from '../data/parallax'
 
@@ -41,7 +41,7 @@ const ParallaxScroll = ({ images, className }: ParallaxScrollProps) => {
             <motion.div style={{ y: translateFirst }} key={'grid-1' + idx}>
               <img
                 src={el}
-                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
+                className='!m-0 size-64 gap-10 rounded-lg object-cover object-left-top !p-0'
                 height='400'
                 width='400'
                 alt='thumbnail'
@@ -54,7 +54,7 @@ const ParallaxScroll = ({ images, className }: ParallaxScrollProps) => {
             <motion.div style={{ y: translateSecond }} key={'grid-2' + idx}>
               <img
                 src={el}
-                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
+                className='!m-0 size-64 gap-10 rounded-lg object-cover object-left-top !p-0'
                 height='400'
                 width='400'
                 alt='thumbnail'
@@ -67,7 +67,7 @@ const ParallaxScroll = ({ images, className }: ParallaxScrollProps) => {
             <motion.div style={{ y: translateThird }} key={'grid-3' + idx}>
               <img
                 src={el}
-                className='!m-0 h-80 w-full gap-10 rounded-lg object-cover object-left-top !p-0'
+                className='!m-0 size-64 gap-10 rounded-lg object-cover object-left-top !p-0'
                 height='400'
                 width='400'
                 alt='thumbnail'

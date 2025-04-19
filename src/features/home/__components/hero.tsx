@@ -41,8 +41,8 @@ function Hero() {
 
                   <BoxReveal boxColor={'#ff8f38'} duration={0.5}>
                     <p className='text-md relative z-10 max-w-[550px] animate-appear text-center font-medium text-muted-foreground opacity-0 delay-100 sm:text-xl lg:text-start'>
-                      Desain lanyard keren, berkualitas, dan sesuai kebutuhanmu.
-                      Cocok untuk event, kantor, komunitas, atau bisnis
+                      Cool, high-quality lanyard designs tailored to your needs.
+                      Perfect for events, offices, communities, or businesses.
                     </p>
                   </BoxReveal>
                 </div>
@@ -54,7 +54,7 @@ function Hero() {
                       className='h-10 px-8'
                       onClick={() =>
                         (window.location.href =
-                          'https://staging.dokteremr.com/admin/login')
+                          'https://api.whatsapp.com/send?phone=6281938215569&text=Halo%20Home%20Art%20Creative!%20Saya%20ingin%20memesan%20produk%20anda.')
                       }
                     >
                       Contact Us

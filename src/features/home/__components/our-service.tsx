@@ -26,7 +26,8 @@ function OurServices() {
             </h2>
             <p className='mb-9 max-w-md text-center text-base font-normal leading-relaxed text-muted-foreground'>
               We don't just sell products—we provide complete solutions for your
-              event identity and branding needs.
+              event identity and branding needs with Fast Production, Best
+              Quality and Affordable Price.
             </p>
           </div>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-3'>

@@ -32,11 +32,11 @@ function OurPartner() {
         <MaxWidthWrapper className='py-12'>
           <div className='mb-8 flex flex-col items-center justify-center'>
             <h2 className='text-dark mb-2 text-[32px] font-bold uppercase dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]'>
-              OUR CLIENT
+              OUR PARTNER
             </h2>
             <p className='mb-9 max-w-md text-center text-base font-normal leading-relaxed text-muted-foreground'>
-              We don't just sell products—we provide complete solutions for your
-              event identity and branding needs.
+              Trusted by clients from various industries, their support drives
+              us to keep delivering the best service and creative solutions.
             </p>
           </div>
 
