@@ -73,7 +73,7 @@ function Hero() {
             <div className='relative h-[500px] w-full lg:h-[450px] lg:w-1/2'>
               <Suspense
                 fallback={
-                  <div className='flex h-full w-full items-center justify-center bg-gray-200 dark:bg-gray-800'>
+                  <div className='flex h-full w-full items-center justify-center'>
                     Loading 3D Scene...
                   </div>
                 }
