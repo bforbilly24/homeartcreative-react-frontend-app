@@ -1,5 +1,3 @@
-'use client'
-
 import { TextHoverEffect } from '@/components/ui/aceternityui/text-hover-effect'
 import { FooterLinkBase, FooterLinkWithIcon } from '@/types/footer'
 import { FOOTER_LINKS } from '@/constants/footer-link'

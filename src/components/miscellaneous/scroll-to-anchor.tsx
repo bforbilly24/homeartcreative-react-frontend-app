@@ -1,5 +1,3 @@
-'use client'
-
 import { useEffect, useState } from 'react'
 import { ChevronUp } from 'lucide-react'
 import { WhatsappIcon } from '../svgs/whatsapp-icom'
