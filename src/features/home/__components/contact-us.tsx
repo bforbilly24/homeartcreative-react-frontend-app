@@ -1,4 +1,4 @@
-import { Phone, Mail, Clock, MapPin, HouseIcon } from 'lucide-react'
+import { Phone, Mail, HouseIcon } from 'lucide-react'
 import MaxWidthWrapper from '@/components/global/max-width-wrapper'
 import AnimationContainer from '@/components/global/animation-container'
 

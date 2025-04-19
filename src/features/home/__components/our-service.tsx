@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { Link } from '@tanstack/react-router'
-import { ArrowRight, IdCard, Omega, Tally1 } from 'lucide-react'
+import { IdCard, Omega, Tally1 } from 'lucide-react'
 import { Button } from '@/components/ui/shadcn/button'
 import AnimationContainer from '@/components/global/animation-container'
 import MaxWidthWrapper from '@/components/global/max-width-wrapper'

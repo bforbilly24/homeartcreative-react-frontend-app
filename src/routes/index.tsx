@@ -1,6 +1,13 @@
+// src/routes/index.tsx
+import { Suspense, lazy } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
-import Home from '@/features/home'
+
+const Home = lazy(() => import('@/features/home'))
 
 export const Route = createFileRoute('/')({
-  component: () => <Home />,
+  component: () => (
+    <Suspense fallback={<div>Loading Home...</div>}>
+      <Home />
+    </Suspense>
+  ),
 })
