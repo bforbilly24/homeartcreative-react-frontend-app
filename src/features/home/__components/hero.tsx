@@ -1,13 +1,17 @@
+import { lazy, Suspense } from 'react'
+import { Environment, Lightformer } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
 import { AnimatedShinyText } from '@/components/ui/magicui/animated-shiny-text'
 import { BoxReveal } from '@/components/ui/magicui/box-reveal'
 import InteractiveHoverButton from '@/components/ui/magicui/interactive-hover-button'
 import { Button } from '@/components/ui/shadcn/button'
 import AnimationContainer from '@/components/global/animation-container'
 import MaxWidthWrapper from '@/components/global/max-width-wrapper'
-import Band from './band'
-import { Canvas } from '@react-three/fiber'
-import { Environment, Lightformer } from '@react-three/drei'
-import { Physics } from '@react-three/rapier'
+
+const Band = lazy(() => import('./band'))
+const Physics = lazy(() =>
+  import('@react-three/rapier').then((module) => ({ default: module.Physics }))
+)
 
 function Hero() {
   return (
@@ -67,45 +71,53 @@ function Hero() {
             </div>
 
             <div className='relative h-[500px] w-full lg:h-[450px] lg:w-1/2'>
-              <Canvas
-                camera={{ position: [0, 0, 13], fov: 25 }}
-                style={{ backgroundColor: 'transparent' }}
+              <Suspense
+                fallback={
+                  <div className='flex h-full w-full items-center justify-center bg-gray-200 dark:bg-gray-800'>
+                    Loading 3D Scene...
+                  </div>
+                }
               >
-                <ambientLight intensity={Math.PI} />
-                <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
-                  <Band />
-                </Physics>
-                <Environment>
-                  <Lightformer
-                    intensity={2}
-                    color='white'
-                    position={[0, -1, 5]}
-                    rotation={[0, 0, Math.PI / 3]}
-                    scale={[100, 0.1, 1]}
-                  />
-                  <Lightformer
-                    intensity={3}
-                    color='white'
-                    position={[-1, -1, 1]}
-                    rotation={[0, 0, Math.PI / 3]}
-                    scale={[100, 0.1, 1]}
-                  />
-                  <Lightformer
-                    intensity={3}
-                    color='white'
-                    position={[1, 1, 1]}
-                    rotation={[0, 0, Math.PI / 3]}
-                    scale={[100, 0.1, 1]}
-                  />
-                  <Lightformer
-                    intensity={10}
-                    color='white'
-                    position={[-10, 0, 14]}
-                    rotation={[0, Math.PI / 2, Math.PI / 3]}
-                    scale={[100, 10, 1]}
-                  />
-                </Environment>
-              </Canvas>
+                <Canvas
+                  camera={{ position: [0, 0, 13], fov: 25 }}
+                  style={{ backgroundColor: 'transparent' }}
+                >
+                  <ambientLight intensity={Math.PI} />
+                  <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
+                    <Band />
+                  </Physics>
+                  <Environment>
+                    <Lightformer
+                      intensity={2}
+                      color='white'
+                      position={[0, -1, 5]}
+                      rotation={[0, 0, Math.PI / 3]}
+                      scale={[100, 0.1, 1]}
+                    />
+                    <Lightformer
+                      intensity={3}
+                      color='white'
+                      position={[-1, -1, 1]}
+                      rotation={[0, 0, Math.PI / 3]}
+                      scale={[100, 0.1, 1]}
+                    />
+                    <Lightformer
+                      intensity={3}
+                      color='white'
+                      position={[1, 1, 1]}
+                      rotation={[0, 0, Math.PI / 3]}
+                      scale={[100, 0.1, 1]}
+                    />
+                    <Lightformer
+                      intensity={10}
+                      color='white'
+                      position={[-10, 0, 14]}
+                      rotation={[0, Math.PI / 2, Math.PI / 3]}
+                      scale={[100, 10, 1]}
+                    />
+                  </Environment>
+                </Canvas>
+              </Suspense>
             </div>
           </div>
         </MaxWidthWrapper>

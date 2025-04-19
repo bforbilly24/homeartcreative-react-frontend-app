@@ -18,8 +18,11 @@ export default defineConfig({
         manualChunks: {
           'react-vendor': ['react', 'react-dom'],
           'tanstack-router': ['@tanstack/react-router'],
-          'three-vendor': ['three', '@react-three/fiber', '@react-three/drei'],
-
+          'three-core': ['three'],
+          'react-three-fiber': ['@react-three/fiber'],
+          'react-three-drei': ['@react-three/drei'],
+          'react-three-rapier': ['@react-three/rapier'],
+          meshline: ['meshline'],
           'ui-vendor': [
             '@radix-ui/react-dialog',
             '@radix-ui/react-dropdown-menu',
@@ -27,7 +30,6 @@ export default defineConfig({
             '@radix-ui/react-separator',
             '@radix-ui/react-slot',
           ],
-
           'animation-vendor': [
             'framer-motion',
             'motion',
